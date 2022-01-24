@@ -1,5 +1,7 @@
 var n = 0;
 
+
+
 function button(){
     n = n+1;
 
@@ -23,21 +25,23 @@ function button(){
     div.style.color = "white";
     div.style.margin = "10px";
     div.style.borderRadius = "12px";
-    del.style.margin = "20px"
+    del.style.margin = "20px";
     div.appendChild(headin);
-    div.appendChild(space)
+    div.appendChild(space);
     div.appendChild(para);
     div.appendChild(del);
-    //var x = document.getElementById("dele").textContent;
-    //var y = document.createTextNode("This just got added");
-    //x.appendChild(y);
     div.style.float = "left";
     task.value="";
     todo.value="";
     var dvv = document.getElementById("tobe");
-    
+
+    function delte(){
+        div.parentElement.removeChild(div);
+    }
+
 
     document.getElementById("main").appendChild(div);
-    del.setAttribute("onclick", "");
+    del.addEventListener("click", delte);
+    var g = 10
     
 }
