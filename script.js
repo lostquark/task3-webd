@@ -14,18 +14,18 @@ function button(){
     var del = document.createElement("button");
     del.innerText = "delete"
     del.setAttribute("id","dele");
+    del.setAttribute("class","fa fa-trash")
     div.setAttribute("id","tobe");
 
     
     div.style.width = "300px";
     div.style.padding = "10px";
     div.style.fontSize = "25px"
-    div.style.height = "300px";
+    div.style.height = "400px";
     div.style.background = "rgb(85, 0, 255)";
     div.style.color = "white";
     div.style.margin = "10px";
     div.style.borderRadius = "12px";
-    del.style.margin = "20px";
     div.appendChild(headin);
     div.appendChild(space);
     div.appendChild(para);
